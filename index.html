@@ -9,7 +9,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./script/index.js" defer></script>
     <title>Delivery Food</title>
   </head>
   <body>
@@ -25,7 +26,7 @@
                 <img src="./images/icons/user.png" alt="user" />
                 Войти
               </button>
-              <button class="btn btn-outline">
+              <button class="btn btn-outline" id="cart-button">
                 <img
                   src="./images/icons/shopping-cart.png"
                   alt="shopping-cart"
@@ -44,6 +45,7 @@
                 Онлайн-сервис <br />
                 доставки еды на дом
               </h2>
+
               <p class="banner-item--subtitle">
                 Блюда из любимого ресторана привезет курьер в перчатках, маске и
                 с антисептиком
@@ -62,7 +64,7 @@
                 placeholder="Поиск блюд и ресторанов"
               />
             </div>
-            <div class="products-wrapper">
+            <div class="products-wrapper" id="rests-container">
               <a href="/goods.html" class="products-card">
                 <div class="products-card_image">
                   <img src="./images/rest/pizza-plus.jpg" alt="rest-1" />
